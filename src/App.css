@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #6abbff;
+}
+.App{
+  width: 580px;
+  height: 280px;
+  background-color: #212843;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  /* align-items: center; */
+}
+
+.qestion-sct{
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+.main-heading{
+  color: #fff;
+  font-size: 38px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.question-length{
+  font-size: 30px;
+}
+.question{
+  font-size: 22px;
+  color: #fff;
+}
+
+.anwser-sct{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.anwser-btn, .resetBtn{
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 10px;
+  justify-content: flex-start;
   align-items: center;
+  border: 5px solid #234668;
+  cursor: pointer;
+  transition: .3s all ease;
+}
+.anwser-btn:hover{
+  background-color: #234668;
+  border: 5px solid #252d4a;
+}
+
+.fianl-score{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 26px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resetBtn{
+  width: 25%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin-top: 15px;
 }
